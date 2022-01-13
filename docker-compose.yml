@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  roach1:
+    image: desktop-docker-snapshots/hello-world:1.0.0
+    command: "echo teste"
+    deploy:
+      replicas: 1
+    ports:
+      - 8282
